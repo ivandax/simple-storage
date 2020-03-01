@@ -1,0 +1,20 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    width: 500px;
+    padding: 10px;
+}
+
+.form input{
+    padding:10px;
+    border-radius: 4px;
+    width: 300px;
+}
+
+.form button{
+    background-color: cadetblue;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
