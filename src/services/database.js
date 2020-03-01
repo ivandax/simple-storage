@@ -37,6 +37,20 @@ async function getItem(collection, itemId) {
     return null;
 }
 
+async function getByName(collection, name) {
+    const db = getDbInstance();
+    const dbCollection = db.collection(collection);
+    const collectionFiltered = dbCollection.where('name', '==', name);
+    const collectionData = await collectionFiltered.get();
+
+    const results = [];
+    collectionData.forEach((document)=>{
+        results.push(parseDoc(document));
+    });
+
+    return results;
+}
+
 async function addItem(collection, item) {
     const db = getDbInstance();
     const result = await db.collection(collection).add(item)
@@ -90,5 +104,6 @@ export{
     getAllRealTime,
     getAll,
     deleteItem,
-    getItemRealTime
+    getItemRealTime,
+    getByName
 }
