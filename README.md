@@ -16,6 +16,7 @@ This simple app allows you to provide a name and then upload an image.
 * Backend handled with Firebase (Firestore for database, and Storage)
 * The main component is "Form".
 * Functions to interact with the database are in src/services/storage.js and /database.js
+* A simple test can be performed (with Jest) to try the addItem function.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
