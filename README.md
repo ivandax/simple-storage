@@ -1,6 +1,8 @@
 ## App Usage
 
-This simple app allows you to provide a name and then upload an image. 
+This simple app allows you to provide a name and then upload an image.
+
+* A working version of this app is at: https://simple-storage-ivan.web.app/
 
 * The file upload button will be enabled only once a string has been entered as a name.
 * Once the file is uploaded a message will appear which includes a link to the recently uploaded image.
