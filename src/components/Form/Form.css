@@ -4,6 +4,11 @@
     background-color: beige;
     width: 500px;
     padding: 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: solid 2px black;
+    margin-top: 10px;
+
 }
 
 .form input{
@@ -14,4 +19,8 @@
 
 .error{
     color: red;
+}
+
+span, label{
+    margin-bottom: 3px;
 }

@@ -1,3 +1,20 @@
+## App Usage
+
+This simple app allows you to provide a name and then upload an image. 
+
+* The file upload button will be enabled only once a string has been entered as a name.
+* Once the file is uploaded a message will appear which includes a link to the recently uploaded image.
+* Using a name that already exists in the database will cause the image reference to change.
+* A name that does not exist creates a new item in the database.
+* Uploading the same image again will not affect the storage, we are just changing the references in the database.
+
+## App Details
+
+* Created using React.
+* Backend handled with Firebase (Firestore for database, and Storage)
+* The main component is "Form".
+* Functions to interact with the database are in src/services/storage.js and /database.js
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
